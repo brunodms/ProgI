@@ -1,4 +1,4 @@
-package beecrowd.atividade4;
+package Beecrowd.Atividade4;
 
 import java.util.Scanner;
 

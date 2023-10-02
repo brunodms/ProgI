@@ -1,4 +1,4 @@
-package atividade2;
+package Atividade2;
 
 public class BaralhoVazioException extends Exception {
     
