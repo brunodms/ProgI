@@ -1,23 +1,23 @@
 package calculadora.operacoes;
 
-public class Soma extends Operacao{
+public class Potenciacao extends Operacao{
 
-    public Soma() {
-        super("+");
+    public Potenciacao() { 
+        super("^");
     }
 
     @Override
     public double executar(int x, int y) {
-        return x + y;
+        return Math.pow(x, y);
     }
 
     @Override
     public double executar(double x, double y) {
-        return this.truncarValor(x + y, 2);
+        return this.truncarValor(Math.pow(x, y), 2);
     }
 
     @Override
     public double executar(double x, double y, int precisao) {
-        return this.truncarValor(x + y, precisao);
-    }  
+        return this.truncarValor(Math.pow(x, y), precisao);
+    } 
 }
