@@ -1,5 +1,3 @@
-package calculadora;
-
 import calculadora.operacoes.Divisao;
 import calculadora.operacoes.Multiplicacao;
 import calculadora.operacoes.Operacao;
@@ -46,7 +44,8 @@ public class CalculadoraController {
 
     @FXML
     private TextField resultado;
-//------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------//
+
     public double getX (TextField valorX) {
         String xString = valorX.getText();
         return Double.parseDouble(xString);
@@ -56,7 +55,7 @@ public class CalculadoraController {
         String yString = valorY.getText();
         return Double.parseDouble(yString);
     }
-//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------//
     @FXML
     void fazerSoma(ActionEvent event) {
         double x = getX(valorX);
